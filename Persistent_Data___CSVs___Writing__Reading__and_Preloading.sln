@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistent_Data___CSVs___Writing__Reading__and_Preloading", "Persistent_Data___CSVs___Writing__Reading__and_Preloading.csproj", "{95666C87-BFE9-48FD-A696-3D085B4663E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95666C87-BFE9-48FD-A696-3D085B4663E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95666C87-BFE9-48FD-A696-3D085B4663E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95666C87-BFE9-48FD-A696-3D085B4663E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95666C87-BFE9-48FD-A696-3D085B4663E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D39ADF3B-DA6E-4097-AAE2-A74BD0798A8E}
+	EndGlobalSection
+EndGlobal

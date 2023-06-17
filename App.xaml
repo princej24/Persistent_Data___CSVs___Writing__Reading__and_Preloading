@@ -1,0 +1,9 @@
+﻿<Application x:Class="Persistent_Data___CSVs___Writing__Reading__and_Preloading.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Persistent_Data___CSVs___Writing__Reading__and_Preloading"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
