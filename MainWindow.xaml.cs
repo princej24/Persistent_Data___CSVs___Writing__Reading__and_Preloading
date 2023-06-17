@@ -31,13 +31,13 @@ namespace Persistent_Data___CSVs___Writing__Reading__and_Preloading
         {
             InitializeComponent();
 
-           //Preload();
+           
 
-         
 
-          
 
-            MessageBox.Show(loadstudents.Count.ToString());
+
+
+            lvDisplay.ItemsSource = loadstudents;
 
         }
         public void LoadCSV(List<Student> list)
@@ -67,7 +67,7 @@ namespace Persistent_Data___CSVs___Writing__Reading__and_Preloading
         public void SaveCSVfile<T>(string filePath, List<T> list)
         {
             CultureInfo ci = CultureInfo.InvariantCulture;
-           // string filePath = "students.csv";
+            // string filePath = "students.csv";
 
             using (var stream = File.Open(filePath, FileMode.OpenOrCreate))
             using (var writer = new StreamWriter(stream))
@@ -79,5 +79,42 @@ namespace Persistent_Data___CSVs___Writing__Reading__and_Preloading
             }
         }
 
+        
+
+       
+
+
+        
+
+        private void savetoCSV_Click(object sender, RoutedEventArgs e)
+        {
+            SaveCSVfile(filePath, loadstudents);
+        }
+
+        private void btnAddpp_Click(object sender, RoutedEventArgs e)
+        {
+            lvDisplay.ItemsSource = loadstudents;
+
+            Preload();
+
+        }
+
+        private void btnAddPerson_Click(object sender, RoutedEventArgs e)
+        {
+
+            string firstname = txtFName.Text;
+            string lastname = txtLName.Text;
+            int GenEdGrade = int.Parse(txtGened.Text);
+            int CsiGrade = int.Parse(txtCSI.Text);
+
+
+            loadstudents.Add(new Student(firstname, lastname, GenEdGrade, CsiGrade));
+
+        }
+
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+           // LoadCSV();
+        }
     }
 }

@@ -6,7 +6,31 @@
         xmlns:local="clr-namespace:Persistent_Data___CSVs___Writing__Reading__and_Preloading"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+   
+    <Grid Background="#FF80719E">
+        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="68,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLName" HorizontalAlignment="Left" Margin="68,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCSI" HorizontalAlignment="Left" Margin="68,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="68,88,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="68,152,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="csi" HorizontalAlignment="Left" Margin="68,213,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="btnAddPerson" Content="Add Person" HorizontalAlignment="Left" Margin="65,330,0,0" VerticalAlignment="Top" Width="120" Click="btnAddPerson_Click"/>
+        <ListView x:Name="lvDisplay" d:ItemsSource="{d:SampleData ItemCount=5}" Height="NaN" Margin="280,30,71,72" Width="NaN">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding firstname}" />
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding lastname}" />
+                    <GridViewColumn Header="CSI" DisplayMemberBinding="{Binding GenEdGrade}" />
+                    <GridViewColumn Header="GENED" DisplayMemberBinding="{Binding CsiGrade}" />
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Preload" HorizontalAlignment="Left" Margin="68,390,0,0" VerticalAlignment="Top" Height="24" Width="155" Click="btnAddpp_Click"/>
+        <Button x:Name="savetoCSV" Content="Save CSV" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="24" Width="156" Click="savetoCSV_Click"/>
+        <Button Content="Load CSV" HorizontalAlignment="Left" Margin="553,390,0,0" VerticalAlignment="Top" Height="24" Width="156" Click="Load_Click"/>
+        <Label Content="GENED" HorizontalAlignment="Left" Margin="68,260,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="txtGened" HorizontalAlignment="Left" Margin="64,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
 
     </Grid>
 </Window>

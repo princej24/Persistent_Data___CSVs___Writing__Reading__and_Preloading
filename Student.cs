@@ -33,6 +33,12 @@ namespace Persistent_Data___CSVs___Writing__Reading__and_Preloading
         public string LastName { get => _LastName; set => _LastName = value; }
         public int GenEdGrade { get => genEdGrade; set => genEdGrade = value; }
         public int CsiGrade { get => csiGrade; set => csiGrade = value; }
+
+
+        //public override string Tosting()
+        //{
+        //    return $"{Firstname}-{LastName}-{GenEdGrade}-{CsiGrade}";
+        //}
     }
     
 }
